@@ -1,0 +1,1 @@
+savedcmd_/home/admin/DriversMAI/PZ2/mydriver.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/admin/DriversMAI/PZ2/mydriver.ko /home/admin/DriversMAI/PZ2/mydriver.o /home/admin/DriversMAI/PZ2/mydriver.mod.o
