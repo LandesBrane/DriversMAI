@@ -1,0 +1,1 @@
+savedcmd_/home/admin/DriversMAI/PZ4/proc_char.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/admin/DriversMAI/PZ4/proc_char.ko /home/admin/DriversMAI/PZ4/proc_char.o /home/admin/DriversMAI/PZ4/proc_char.mod.o
