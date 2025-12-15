@@ -101,13 +101,14 @@ static int __init proc_char_init(void) {
         return major_num;
     }
 
-    // Создание класса и устройства
-    my_class = class_create(THIS_MODULE, "myproc_class");
+    // Создание класса (новый API: только имя!)
+    my_class = class_create("myproc_class");
     if (IS_ERR(my_class)) {
         unregister_chrdev(major_num, DEVICE_NAME);
         return PTR_ERR(my_class);
     }
 
+    // Создание устройства
     my_device = device_create(my_class, NULL, MKDEV(major_num, 0), NULL, DEVICE_NAME);
     if (IS_ERR(my_device)) {
         class_destroy(my_class);
