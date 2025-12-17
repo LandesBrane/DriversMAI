@@ -1,0 +1,1 @@
+savedcmd_/home/admin/DriversMAI/PZ6/pci_net.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/admin/DriversMAI/PZ6/pci_net.ko /home/admin/DriversMAI/PZ6/pci_net.o /home/admin/DriversMAI/PZ6/pci_net.mod.o
