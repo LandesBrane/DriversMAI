@@ -1,0 +1,6 @@
+config DUMMY_PCI_NET
+    tristate "Dummy PCI Network Driver"
+    depends on PCI
+    help
+      Educational PCI network driver for lab assignments.
+      Simulates a network card with fixed MAC address.
