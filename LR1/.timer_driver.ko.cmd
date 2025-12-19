@@ -1,0 +1,1 @@
+savedcmd_/home/admin/DriversMAI/LR1/timer_driver.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/admin/DriversMAI/LR1/timer_driver.ko /home/admin/DriversMAI/LR1/timer_driver.o /home/admin/DriversMAI/LR1/timer_driver.mod.o
